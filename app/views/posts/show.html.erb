@@ -3,4 +3,9 @@
 <ul><% @post.categories.each do |c| %>
   <li> <%= c.name %> </li><br>
   <% end %>
-</ul>
+</ul><br>
+
+<ul><% @post.comments.each do |co| %>
+  <li> <%= co.content %> </li><br>
+  <% end %>
+</ul><br>
