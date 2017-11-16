@@ -9,3 +9,8 @@
   <li> <%= co.content %> </li><br>
   <% end %>
 </ul><br>
+
+<ul><% @post.comments.each do |co| %>
+  <li> <a href="/users/<%= co.user.id %>"> <%= co.user.username %></a> </li><br>
+  <% end %>
+</ul><br>
