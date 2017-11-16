@@ -8,10 +8,11 @@
 
   <p>
     <%= f.label "Comment"
-    <%= f.text_area :comment_content %>
+    <%= f.text_area :content %>
+    <%= f.label "Username of commenter"
     <%= f.collection_select(:user, :user_id, User.all, :id,
                           :username, prompt: true) %>
-                      
+
 
 <ul><% @post.comments.each do |co| %>
   <li> <%= co.content %> </li><br>
