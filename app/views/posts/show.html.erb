@@ -12,6 +12,9 @@
     <%= f.label "Username of commenter"
     <%= f.collection_select(:user, :user_id, User.all, :id,
                           :username, prompt: true) %>
+    <%= f.submit %>
+    <% end %>
+  </p>
 
 
 <ul><% @post.comments.each do |co| %>
