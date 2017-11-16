@@ -10,7 +10,7 @@
   <% end %>
 </ul><br>
 
-<ul><% @post.comments.each do |co| %>
-  <li> <a href="/users/<%= co.user.id %>"> <%= co.user.username %></a> </li><br>
+<ul><% @post.users.each do |u| %>
+  <li> <a href="/users/<%= u.id %>"> <%= u.username %></a> </li><br>
   <% end %>
 </ul><br>
