@@ -23,7 +23,7 @@
   <% if User.find_by_id(co.user_id) %>
     <% user = User.find_by_id(co.user_id)  %>
   <% end %>
-  <li> <%= co.user.username %> says: <%= co.content %> </li><br>
+  <li> <%= user.username %> says: <%= co.content %> </li><br>
   <% end %>
 </ul><br>
 
