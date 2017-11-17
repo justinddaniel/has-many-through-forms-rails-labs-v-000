@@ -10,7 +10,7 @@
   <p>
     <%= f.label "Comment" %>
     <%= f.text_area :content %>
-    <%= f.label "Username of commenter"
+    <%= f.label "Username of commenter" %>
     <%= f.collection_select(:user, :user_id, User.all, :id,
                           :username, prompt: true) %>
     <%= f.submit %>
