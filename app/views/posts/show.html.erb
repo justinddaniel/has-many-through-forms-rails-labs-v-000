@@ -8,7 +8,7 @@
 <%= form_for (@comment) do |f| %>
 
   <p>
-    <%= f.label "Comment"
+    <%= f.label "Comment" %>
     <%= f.text_area :content %>
     <%= f.label "Username of commenter"
     <%= f.collection_select(:user, :user_id, User.all, :id,
