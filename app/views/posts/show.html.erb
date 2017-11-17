@@ -20,7 +20,7 @@
 
 
 <ul><% @post.comments.each do |co| %>
-  <li> <%= co.user.username %> says: <%= co.content %> </li><br>
+  <li> <%= co.user.username if co.user.username %> says: <%= co.content %> </li><br>
   <% end %>
 </ul><br>
 
