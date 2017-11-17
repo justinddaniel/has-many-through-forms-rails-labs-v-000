@@ -21,7 +21,7 @@
 
 <ul><% @post.comments.each do |co| %>
   <% user = User.find_by_id(co.user_id) if User.find_by_id(co.user_id) %>
-  <% end %>
+    <% end %>
   <% end %>
   <li> <%= co.user.username %> says: <%= co.content %> </li><br>
   <% end %>
