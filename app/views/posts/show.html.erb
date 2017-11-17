@@ -20,8 +20,9 @@
 
 
 <ul><% @post.comments.each do |co| %>
-
-  <li> says: <%= co.content %> </li><br>
+<% @user = User.find_by_id(co.user_id) %>
+<% end %>
+  <li> <%= @user.username %> says: <%= co.content %> </li><br>
   <% end %>
 </ul><br>
 
