@@ -15,8 +15,6 @@
     <%= f.collection_select( :user_id, User.all, :id,
                           :username, prompt: true) %>
 
-    <%= f.label "Create new username" %>
-    <%= f.text_field :user_attributes[:username] %>
     <%= f.submit %>
     <% end %>
   </p>
