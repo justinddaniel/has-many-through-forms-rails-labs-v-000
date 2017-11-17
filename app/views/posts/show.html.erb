@@ -16,7 +16,7 @@
                           :username, prompt: true) %>
 
     <%= f.label "Create new username" %>
-    <%= f.text_field :user_attributes => :username %>
+    <%= f.text_field :user_attributes[] %>
     <%= f.submit %>
     <% end %>
   </p>
